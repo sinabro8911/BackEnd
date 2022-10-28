@@ -15,7 +15,7 @@ spec:
    spec:
     containers:
     - name: container
-      image: sinabro8911/httpd:0.2
+      image: sinabro8911/httpd:latest
       envFrom:
       - configMapRef:
           name: httpd-cm-prod
