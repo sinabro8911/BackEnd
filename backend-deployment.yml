@@ -16,9 +16,12 @@ spec:
     - name: backend
       image: sinabro8911/backend:latest
       envFrom:
+        - configMapRef:
+            name: mysql-cm
+        - secretRef:
+            name: mysql-sec
       ports:
       - containerPort: 8000
-      command: ["/bin/sh", "-ec", "while :; do echo '.'; sleep 5 ; done"]
       resources:
         requests:
           cpu: 100m
