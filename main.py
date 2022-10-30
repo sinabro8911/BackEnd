@@ -23,7 +23,7 @@ def hello():
     conn.commit()
     conn.close()
 
-    result = {"code": 200, "message": rows}
+    result = {"code": 20221030, "message": "fixed"}
     return result
 
 
