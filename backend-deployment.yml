@@ -6,7 +6,7 @@ spec:
  selector:
    matchLabels:
     type: backend
- replicas: 1
+ replicas: 2
  template:
    metadata:
      labels:
@@ -14,7 +14,7 @@ spec:
    spec:
     containers:
     - name: backend
-      image: sinabro8911/backend:latest
+      image: cloudcamp2022/backend:latest
       envFrom:
         - configMapRef:
             name: mysql-cm
