@@ -14,7 +14,7 @@ spec:
    spec:
     containers:
     - name: backend
-      image: cloudcamp2022/backend:latest
+      image: sinabro8911/backend:latest
       envFrom:
         - configMapRef:
             name: mysql-cm
