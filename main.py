@@ -23,7 +23,7 @@ def hello():
     conn.commit()
     conn.close()
 
-    result = {"code": 400, "message": rows}
+    result = {"code": 500, "message": rows}
     return result
 
 
